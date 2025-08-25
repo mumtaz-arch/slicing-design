@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slicing Design</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/icon/logo.png" alt="Logo" width="60" class="me-2">
+    </a>
+
+    <!-- Tengah -->
+    <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Kanan -->
+    <div class="d-flex align-items-center order-lg-3">
+      <!-- Dropdown Bahasa -->
+      <div class="dropdown lang-select">
+        <a class="btn dropdown-toggle d-flex align-items-center text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://flagcdn.com/16x12/gb.png" alt="EN"> EN
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/id.png"> ID</a></li>
+          <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/fr.png"> FR</a></li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="divider mx-2"></div>
+
+      <!-- Find Store -->
+      <a href="#" class="d-flex align-items-center text-decoration-none find-store">
+        <i class="bi bi-geo-alt-fill me-1"></i> Find Store
+      </a>
+
+      <!-- Toggler (pindahkan ke paling kanan) -->
+      <button class="navbar-toggler ms-3 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+  <div class="container d-flex p-0">
+    <!-- Kiri -->
+    <div class="flex-fill left-container box">
+      <p>Kiri (gold gradient)</p>
+    </div>
+
+    <!-- Kanan -->
+    <div class="flex-fill right-container box">
+      <p>Kanan (Gradient)</p>
+    </div>
+  </div>
+
+
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
