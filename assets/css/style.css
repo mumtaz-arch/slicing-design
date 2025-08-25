@@ -1,41 +1,41 @@
 @font-face {
   font-family: "Stratos";
-  src: url("fonts/stratos-regular-TRIAL.otf") format("opentype");
+  src: url("../fonts/stratos-regular-TRIAL.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Stratos";
-  src: url("fonts/stratos-bold-TRIAL.otf") format("opentype");
+  src: url("../fonts/stratos-regular-TRIAL.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Stratos";
-  src: url("fonts/stratos-light-TRIAL.otf") format("opentype");
+  src: url("../fonts/stratos-light-TRIAL.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Stratos";
-  src: url("fonts/stratos-medium-TRIAL.otf") format("opentype");
+  src: url("../fonts/stratos-medium-TRIAL.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Stratos";
-  src: url("fonts/stratos-semibold-TRIAL.otf") format("opentype");
+  src: url("../fonts/stratos-semibold-TRIAL.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Stratos";
-  src: url("fonts/stratos-thin-TRIAL.otf") format("opentype");
+  src: url("../fonts/stratos-thin-TRIAL.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
 }
@@ -54,59 +54,92 @@
 
 }
 
-.navbar {
-      background: var(--secondary-accent);
-    }
 
-    .navbar-nav .nav-link {
-      font-weight: 600;
-      color: var(--primary-color);
-      text-transform: uppercase;
-      margin: 0 10px;
-      transition: 0.3s ease;
-    }
+body {
+  font-family: "Stratos", sans-serif;
+}
 
-    .navbar-nav .nav-link:hover {
-      color: var(--accent-gold);
-    }
+.navbar-custom {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-family: "Stratos", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-    .lang-select img {
-      width: 20px;
-      margin-right: 5px;
-    }
+.px-70 {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+}
 
-    .divider {
-      border-left: 2px solid transparent;
-      background: var(--gradient-gold);
-      margin: 0 15px;
-      height: 24px;
-    }
+.navbar-nav {
+  gap: 20px;
+}
 
-    .find-store {
-      color: var(--primary-color);
-      font-weight: 600;
-    }
+.navbar-nav .nav-link {
+  color: var(--primary-color);
+  margin: 0 15px;
+  text-transform: uppercase;
+  font-family: "Stratos", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  
+}
 
-    .find-store:hover {
-      color: var(--accent-gold);
-    }
-    
- .right-container {
-      background: var(--gradient-deep-coffee);
-      color: white;
-    }
+.navbar-nav .nav-link:hover {
+  color: var(--accent-gold);
+}
 
-    .left-container {
-      background: var(--gradient-gold);
-      font-family: "Stratos",sans-serif;
-      font-weight: 700;
-    }
+.lang-select > a {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: "Stratos", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-    .box {
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+
+
+.lang-select img {
+  width: 20px;
+  margin-right: 5px;
+  
+}
+
+
+
+.dropdown-menu {
+  font-family: "Stratos", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dropdown-item img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.find-store {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: "Stratos", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.find-store:hover {
+  color: var(--accent-gold);
+}
+
+.find-store i {
+  margin-right: 5px;
+ 
+}
 
     

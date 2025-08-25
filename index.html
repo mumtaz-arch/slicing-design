@@ -9,15 +9,21 @@
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-  <div class="container">
-
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="assets/icon/logo.png" alt="Logo" width="60" class="me-2">
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+  <div class="container-fluid px-70">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="assets/icon/logo.png
+      " alt="Coffee Time" height="40">
     </a>
 
-  
-    <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+    <!-- Toggle untuk mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu tengah -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
@@ -27,28 +33,31 @@
       </ul>
     </div>
 
-    <div class="d-flex align-items-center order-lg-3">
-   
+    <!-- Kanan: Language & Find Store -->
+    <div class="d-flex align-items-center">
+      <!-- Dropdown Language -->
       <div class="dropdown lang-select">
-        <a class="btn dropdown-toggle d-flex align-items-center text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://flagcdn.com/16x12/gb.png" alt="EN"> EN
+        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN
         </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/id.png"> ID</a></li>
-          <li><a class="dropdown-item" href="#"><img src="https://flagcdn.com/16x12/fr.png"> FR</a></li>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <a class="dropdown-item" href="#">
+              <img src="https://flagcdn.com/w20/gb.png" alt="EN"> English
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              <img src="https://flagcdn.com/w20/id.png" alt="ID"> Indonesia
+            </a>
+          </li>
         </ul>
       </div>
 
-      <div class="divider mx-2"></div>
-
-
-      <a href="#" class="d-flex align-items-center text-decoration-none find-store">
-        <i class="bi bi-geo-alt-fill me-1"></i> Find Store
+      
+      <a href="#" class="find-store">
+        <i class="bi bi-geo-alt-fill"></i> Find Store
       </a>
-        
-      <button class="navbar-toggler ms-3 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </div>
   </div>
 </nav>
@@ -57,17 +66,6 @@
 
 
 
-  <div class="container d-flex p-0">
-    <!-- Kiri -->
-    <div class="flex-fill left-container box">
-      <p>Kiri (gold gradient)</p>
-    </div>
-
-    <!-- Kanan -->
-    <div class="flex-fill right-container box">
-      <p>Kanan (Gradient)</p>
-    </div>
-  </div>
 
 
 
