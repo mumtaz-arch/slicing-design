@@ -57,6 +57,10 @@
 
 body {
   font-family: "Stratos", sans-serif;
+  
+  margin: 0;
+  line-height: normal;
+
 }
 
 .navbar-custom {
@@ -142,4 +146,93 @@ body {
  
 }
 
-    
+/* Biar teks punya jarak kiri kanan 70px */
+.caption-custom {
+  bottom: 20%;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* Atur tinggi gambar hero */
+.carousel-inner img {
+  object-fit: cover;
+  height: 500px; /* bisa ubah sesuai kebutuhan */
+}
+
+/* Biar lebih mirip gambar kamu (rounded + shadow) */
+.carousel-inner {
+  border-radius: 20px;
+}
+
+.enjoy-the-aroma {
+  	margin: 0;
+}
+.enjoy-the-aroma-container {
+  	position: absolute;
+  	top: calc(50% - 60px);
+  	left: calc(50% - 454px);
+  	letter-spacing: 0.05em;
+  	font-weight: 500;
+  	background: linear-gradient(134.81deg, #3e2c2c, #1f1a17);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+.tagline-section {
+  	width: 100%;
+  	position: relative;
+  	height: 268px;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 48px;
+  	font-family: Stratos;
+}
+
+.gambar-suasana-kafe {
+  	position: absolute;
+  	top: 49px;
+  	left: 70px;
+  	width: 527px;
+  	height: 482px;
+  	overflow: hidden;
+  	object-fit: cover;
+}
+.about-us {
+  	align-self: stretch;
+  	position: relative;
+  	letter-spacing: 0.05em;
+  	font-weight: 500;
+}
+.welcome-to-coffee {
+  	margin: 0;
+}
+.welcome-to-coffee-container {
+  	align-self: stretch;
+  	position: relative;
+  	font-size: 17px;
+  	letter-spacing: 0.01em;
+  	color: #5a4b44;
+}
+.about-us-parent {
+  	position: absolute;
+  	top: 51px;
+  	left: 669px;
+  	width: 548px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+  	justify-content: flex-start;
+  	gap: 10px;
+}
+.about-us-section {
+  	width: 100%;
+  	position: relative;
+  	height: 580px;
+  	overflow: hidden;
+  	text-align: left;
+  	font-size: 48px;
+  	color: #3e2c2c;
+  	font-family: Stratos;
+}
+
+
+
