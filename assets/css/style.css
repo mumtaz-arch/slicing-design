@@ -185,12 +185,13 @@ body {
 /* Atur tinggi gambar hero */
 .carousel-inner img {
   object-fit: cover;
-  height: 500px; /* bisa ubah sesuai kebutuhan */
+  height: 600px; /* bisa ubah sesuai kebutuhan */
 }
 
 /* Biar lebih mirip gambar kamu (rounded + shadow) */
 .carousel-inner {
   border-radius: 40px 40px 0px 0px;
+  
 }
 
 
@@ -265,11 +266,11 @@ body {
 
 }
 
+/* Why Choose Us Section - Overlapping Image Style */
 .why-choose-us-section {
   background-color: #fdfdfd;
   font-family: Stratos, sans-serif;
   font-weight: 700;
-  
 }
 
 .why-choose-us-section h2 {
@@ -282,32 +283,91 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-family: Stratos, sans-serif;
-
 }
 
-/* Card custom style */
-.why-choose-us-section .card {
-  border-radius: 50px 50px 0 0;
-  background: var(--gradient-deep-coffee);
-  color: #fff;
-  overflow: hidden;
-  
-}
-
-.why-choose-us-section .card img {
+/* Overlapping Image Style */
+.card-image-overlap {
   width: 140px;
   height: 140px;
   object-fit: cover;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -70px;
+  display: block;
 }
 
-.why-choose-us-section .card h5 {
-  font-weight: 600;
+/* Custom Card Style */
+.why-choose-card-custom {
+  background: var(--gradient-deep-coffee);
+  border-radius: 50px 50px 0 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  min-height: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-title-custom {
+  font-weight: 700;
+  font-size: 16px;
   letter-spacing: 0.5px;
   font-family: Stratos, sans-serif;
+  margin-bottom: 15px;
+  color: #fff;
 }
 
-.why-choose-us-section .card p {
+.card-text-custom {
   font-size: 14px;
+  line-height: 1.5;
+  font-family: Stratos, sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-image-overlap {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -60px;
+  }
+  
+  .why-choose-card-custom {
+    min-height: 250px;
+  }
+  
+  .card-title-custom {
+    font-size: 15px;
+  }
+  
+  .card-text-custom {
+    font-size: 13px;
+  }
+}
+
+.card-body {
+  
+}
+
+@media (max-width: 576px) {
+  .card-image-overlap {
+    width: 100px;
+    height: 100px;
+    margin-bottom: -50px;
+  }
+  
+  .why-choose-card-custom {
+    min-height: 220px;
+  }
+  
+  .card-title-custom {
+    font-size: 14px;
+  }
+  
+  .card-text-custom {
+    font-size: 12px;
+  }
 }
 
 /* Tired of Same Old Coffee Section */
@@ -830,20 +890,24 @@ body {
 
 .price-container {
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .current-price {
     font-size: 18px;
     font-weight: 700;
     color: var(--primary-color);
-    display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
 
 .original-price {
     font-size: 14px;
     color: #999;
     text-decoration: line-through;
+    margin-bottom: 0;
+    padding-top: 4px;
 }
 
 .btn-add-cart-ramadhan {
