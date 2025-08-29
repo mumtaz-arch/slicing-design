@@ -149,9 +149,38 @@ body {
 /* Biar teks punya jarak kiri kanan 70px */
 .caption-custom {
   bottom: 20%;
-  padding-left: 70px;
-  padding-right: 70px;
+  left: 40px !important;
+  right: auto !important;
+  text-align: left;
+  line-height: 1.8;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: Stratos, sans-serif;
+  font-weight: 700;
+  
 }
+
+.caption-custom h1 {
+  font-size: 48px;
+}
+
+.carousel-indicators{
+  gap: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;        /* kasih ukuran sama */
+  height: 12px !important;
+  border-radius: 50% !important; /* biar bulat */
+  background-color: #fff;        /* warna normal */
+  
+}
+
+.carousel-indicators .active {
+  background-color: var(--accent-gold) !important; /* warna aktif */
+}
+
+
 
 /* Atur tinggi gambar hero */
 .carousel-inner img {
@@ -161,8 +190,10 @@ body {
 
 /* Biar lebih mirip gambar kamu (rounded + shadow) */
 .carousel-inner {
-  border-radius: 20px;
+  border-radius: 40px 40px 0px 0px;
 }
+
+
 
 .enjoy-the-aroma {
   	margin: 0;
@@ -212,27 +243,728 @@ body {
   	letter-spacing: 0.01em;
   	color: #5a4b44;
 }
-.about-us-parent {
-  	position: absolute;
-  	top: 51px;
-  	left: 669px;
-  	width: 548px;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: flex-start;
-  	justify-content: flex-start;
-  	gap: 10px;
-}
+ 
+
+/* Tambahkan style baru untuk about-us-section */
 .about-us-section {
-  	width: 100%;
-  	position: relative;
-  	height: 580px;
-  	overflow: hidden;
-  	text-align: left;
-  	font-size: 48px;
-  	color: #3e2c2c;
-  	font-family: Stratos;
+  color: #3e2c2c;
+  font-family: Stratos, sans-serif;
 }
 
+.about-us-section h2 {
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: #3e2c2c;
+}
 
+.welcome-to-coffee-container {
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  color: #5a4b44;
+  font-family: Stratos, sans-serif;
 
+}
+
+.why-choose-us-section {
+  background-color: #fdfdfd;
+  font-family: Stratos, sans-serif;
+  font-weight: 700;
+  
+}
+
+.why-choose-us-section h2 {
+  color: var(--primary-color);
+  font-family: Stratos, sans-serif;
+  font-weight: 700;
+}
+
+.why-choose-us-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: Stratos, sans-serif;
+
+}
+
+/* Card custom style */
+.why-choose-us-section .card {
+  border-radius: 50px 50px 0 0;
+  background: var(--gradient-deep-coffee);
+  color: #fff;
+  overflow: hidden;
+  
+}
+
+.why-choose-us-section .card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.why-choose-us-section .card h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: Stratos, sans-serif;
+}
+
+.why-choose-us-section .card p {
+  font-size: 14px;
+}
+
+/* Tired of Same Old Coffee Section */
+.tired-coffee-section {
+  background-color: #3e2c2c;
+  color: #c1a875;
+  font-family: 'Stratos', sans-serif;
+}
+
+.tired-coffee-section h2 {
+  color: #c1a875;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px; /* Jarak 10px antara judul dan subjudul */
+}
+
+.tired-coffee-section p {
+  color: #e9dcc9;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 0; /* Menghilangkan margin bawah pada paragraf */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tired-coffee-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Tetap 10px di mobile */
+  }
+  
+  .tired-coffee-section p {
+    font-size: 16px;
+  }
+}
+
+/* Our Strengths Section */
+.our-strengths-section {
+  background-color: #f8f9fa;
+  font-family: 'Stratos', sans-serif;
+}
+
+.our-strengths-section h2 {
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.our-strengths-section .subtitle {
+  color: #6c757d;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.strengths-list {
+  margin-top: 20px;
+}
+
+.strength-item {
+  padding: 8px 0;
+}
+
+.strength-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.strength-icon i {
+  color: white;
+  font-size: 18px;
+}
+
+.strength-text {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+.strengths-image img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.icon-kopi img {
+  padding-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .our-strengths-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .our-strengths-section .subtitle {
+    text-align: center;
+  }
+  
+  .strengths-list {
+    margin-top: 30px;
+  }
+}
+
+/* Best Seller Section */
+.best-seller-section {
+  background-color: #fff;
+  font-family: 'Stratos', sans-serif;
+}
+
+.best-seller-section h2 {
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.best-seller-section .lead {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Carousel Navigation */
+.carousel-nav {
+  gap: 10px;
+}
+
+.carousel-control-prev-custom,
+.carousel-control-next-custom {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev-custom:hover,
+.carousel-control-next-custom:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Product Cards */
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: 20px;
+  text-align: left; /* Mengubah dari text-center ke text-left */
+}
+
+.product-category {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-align: left; /* Memastikan nama produk rata kiri */
+}
+
+.product-price {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: left; /* Memastikan harga rata kiri */
+}
+
+.btn-add-cart {
+  background: var(--gradient-deep-coffee);
+  color: var(--accent-gold);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  width: calc(100% - 40px); /* Melebar tapi tidak mepet ujung, ada jarak 20px di kiri kanan */
+  margin: 0 20px; /* Memberikan jarak dari ujung */
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add-cart:hover {
+  transform: translateY(-3px); /* Efek mengambang */
+  box-shadow: 0 8px 20px rgba(62, 44, 44, 0.3); /* Shadow yang lebih besar saat hover */
+  background: linear-gradient(90deg, #4A3535 0%, #2A201D 100%); /* Gradient coffee yang sedikit lebih terang saat hover */
+  width: calc(100% - 20px); /* Melebar lebih lagi saat hover tapi tetap ada jarak */
+  margin: 0 10px; /* Jarak yang lebih kecil saat  hover */
+}
+
+.btn-add-cart:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(62, 44, 44, 0.2);
+}
+
+/* Untuk container card agar tombol bisa melebar dengan benar */
+.product-info {
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+/* Padding 70px class */
+.px-70 {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+}
+
+/* All Product Category Section */
+.all-product-category-section {
+  background-color: #fff;
+  font-family: 'Stratos', sans-serif;
+}
+
+.all-product-category-section h2 {
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.all-product-category-section .lead {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+
+/* Category Cards */
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  padding: 0;
+  width: 250px;
+  height: 294px;
+  margin: 0 auto;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+}
+
+.category-image {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.category-card:hover .category-image {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image img {
+  transform: scale(1.1);
+}
+
+.category-title {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation Buttons */
+.carousel-control-prev-custom,
+.carousel-control-next-custom {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-control-prev-custom:hover,
+.carousel-control-next-custom:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.carousel-control-prev-custom i,
+.carousel-control-next-custom i {
+  font-size: 14px;
+}
+
+/* Responsive Design untuk px-70 */
+@media (max-width: 768px) {
+  .px-70 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .px-70 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 1400px) {
+  .category-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .category-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .all-product-category-section h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .all-product-category-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .all-product-category-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .category-title {
+    font-size: 14px;
+  }
+  
+  .category-card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .all-product-category-section .lead {
+    font-size: 14px;
+  }
+  
+  .category-title {
+    font-size: 12px;
+  }
+}
+
+/* Ramadhan Special Bundle Section */
+.ramadhan-special-section {
+    background-color: #f8f9fa;
+    font-family: "Stratos", sans-serif;
+}
+
+.ramadhan-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.ramadhan-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+}
+
+.ramadhan-product-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.ramadhan-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.ramadhan-product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ramadhan-product-card:hover .ramadhan-product-image {
+    transform: scale(1.05);
+}
+
+.discount-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--gradient-deep-coffee);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ramadhan-product-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.ramadhan-product-info .product-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.price-container {
+    margin-bottom: 15px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.btn-add-cart-ramadhan {
+    position: relative;
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 25px;
+    font-family: "Stratos", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+    background-image: var(--gradient-gold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-add-cart-ramadhan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-deep-coffee);
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.btn-add-cart-ramadhan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(62, 44, 44, 0.3);
+    width: calc(100% - 20px);
+    margin: 0 10px;
+}
+
+.btn-add-cart-ramadhan:hover::before {
+    transform: scale(1.05);
+}
+
+/* Carousel Navigation */
+.ramadhan-carousel-prev,
+.ramadhan-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-deep-coffee);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.ramadhan-carousel-prev {
+    left: -25px;
+}
+
+.ramadhan-carousel-next {
+    right: -25px;
+}
+
+.ramadhan-carousel-prev:hover,
+.ramadhan-carousel-next:hover {
+    background: var(--gradient-gold);
+    color: var(--primary-color);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .px-70 {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    
+    .ramadhan-title {
+        font-size: 28px;
+    }
+    
+    .ramadhan-subtitle {
+        font-size: 14px;
+    }
+    
+    .ramadhan-carousel-prev {
+        left: -15px;
+    }
+    
+    .ramadhan-carousel-next {
+        right: -15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .px-70 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .ramadhan-title {
+        font-size: 24px;
+    }
+    
+    .ramadhan-carousel-prev,
+    .ramadhan-carousel-next {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
