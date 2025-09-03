@@ -243,8 +243,7 @@ body {
   	font-size: 17px;
   	letter-spacing: 0.01em;
   	color: #5a4b44;
-}
- 
+} 
 
 /* Tambahkan style baru untuk about-us-section */
 .about-us-section {
@@ -588,32 +587,30 @@ body {
   color: var(--accent-gold);
   border: none;
   padding: 12px 30px;
-  border-radius: 25px;
+  border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  position: relative;
   cursor: pointer;
-  width: calc(100% - 40px); /* Melebar tapi tidak mepet ujung, ada jarak 20px di kiri kanan */
-  margin: 0 20px; /* Memberikan jarak dari ujung */
-  transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn-add-cart:hover {
-  transform: translateY(-3px); /* Efek mengambang */
-  box-shadow: 0 8px 20px rgba(62, 44, 44, 0.3); /* Shadow yang lebih besar saat hover */
-  background: linear-gradient(90deg, #4A3535 0%, #2A201D 100%); /* Gradient coffee yang sedikit lebih terang saat hover */
-  width: calc(100% - 20px); /* Melebar lebih lagi saat hover tapi tetap ada jarak */
-  margin: 0 10px; /* Jarak yang lebih kecil saat  hover */
+  background: linear-gradient(90deg, #4A3535 0%, #2A201D 100%);
+  transform: translateY(-2px); /* Efek hover halus */
+  box-shadow: 0 4px 10px rgba(62, 44, 44, 0.2);
 }
 
 .btn-add-cart:active {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(62, 44, 44, 0.2);
+  transform: translateY(0); /* Balik ke posisi semula saat ditekan */
+  box-shadow: 0 2px 6px rgba(62, 44, 44, 0.15);
 }
+
 
 /* Untuk container card agar tombol bisa melebar dengan benar */
 .product-info {
@@ -848,17 +845,36 @@ body {
 .product-image-container {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1; /* Membuat container berbentuk kotak 1:1 */
 }
 
 .ramadhan-product-image {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.3s ease;
+    border-radius: 15px 15px 0 0; /* Border radius hanya di bagian atas */
 }
 
 .ramadhan-product-card:hover .ramadhan-product-image {
     transform: scale(1.05);
+}
+
+
+
+/* Responsive Design untuk Gambar Kotak */
+@media (max-width: 768px) {
+    .product-image-container {
+        aspect-ratio: 1; /* Tetap kotak di mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .product-image-container {
+        aspect-ratio: 1; /* Tetap kotak di mobile kecil */
+    }
 }
 
 .discount-badge {
@@ -908,29 +924,6 @@ body {
     text-decoration: line-through;
     margin-bottom: 0;
     padding-top: 4px;
-}
-
-.btn-add-cart-ramadhan {
-    position: relative;
-    width: calc(100% - 40px);
-    margin: 0 20px;
-    padding: 12px 0;
-    border: none;
-    border-radius: 25px;
-    font-family: "Stratos", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    overflow: hidden;
-    z-index: 1;
-    background-image: var(--gradient-gold);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
 }
 
 .btn-add-cart-ramadhan::before {
