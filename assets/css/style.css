@@ -265,63 +265,83 @@ body {
 
 }
 
-/* Why Choose Us Section - Overlapping Image Style */
-.why-choose-us-section {
-  background-color: #fdfdfd;
-  font-family: Stratos, sans-serif;
-  font-weight: 700;
-}
+  /* Why Choose Us Section - Overlapping Image Style */
+  .why-choose-us-section {
+    background-color: #fdfdfd;
+    font-family: Stratos, sans-serif;
+    font-weight: 700;
+  }
 
-.why-choose-us-section h2 {
-  color: var(--primary-color);
-  font-family: Stratos, sans-serif;
-  font-weight: 700;
-}
+  .why-choose-us-section h2 {
+    color: var(--primary-color);
+    font-family: Stratos, sans-serif;
+    font-weight: 700;
+  }
 
-.why-choose-us-section p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: Stratos, sans-serif;
-}
-
-/* Overlapping Image Style */
-.card-image-overlap {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
+  .why-choose-us-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Stratos, sans-serif;
+  }
+  /* Container untuk gambar */
+.position-relative {
   position: relative;
-  z-index: 2;
-  margin-bottom: -70px;
-  display: block;
 }
 
-/* Custom Card Style */
+  /* Overlapping Image Style */
+.card-image-overlap {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: -75px; /* Gambar setengah di luar card */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: transparent;
+  box-shadow: none;
+}
+
+.why-choose-us-section {
+  padding-bottom: 0; /* Pastikan tidak bentrok */
+}
+
+.why-choose-us-section .row.g-4 {
+  padding-top: 70px; /* jarak aman antara heading dan card */
+  position: relative; /* penting agar absolute image tetap diatur dalam konteks row */
+  z-index: 1;
+}
+
+
+
+  /* Custom Card Style */
 .why-choose-card-custom {
   background: var(--gradient-deep-coffee);
-  border-radius: 50px 50px 0 0;
+  border-radius: 20px;
+  border-radius: 50px 50px 0px 0px !important;
   overflow: hidden;
   position: relative;
   z-index: 1;
   min-height: 280px;
+  padding-top: 90px; /* Memberikan ruang untuk gambar di atas */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  
 }
 
 
+/* Judul dan teks */
 .card-title-custom {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  font-family: Stratos, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
   margin-bottom: 15px;
-  color: #fff;
 }
 
 .card-text-custom {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
-  font-family: Stratos, sans-serif;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0;
+  color: #fff;
 }
 
 /* Responsive Design */
