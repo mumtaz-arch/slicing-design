@@ -867,6 +867,8 @@ body {
     overflow: hidden;
     width: 100%;
     aspect-ratio: 1; /* Membuat container berbentuk kotak 1:1 */
+
+\
 }
 
 .ramadhan-product-image {
@@ -899,16 +901,26 @@ body {
 
 .discount-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 0;
+    transform: translateX(-50%);
     background: var(--gradient-deep-coffee);
     color: white;
     padding: 5px 12px;
-    border-radius: 20px;
+    border-radius: 0px 6px 6px 0px;
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
+    z-index: 10;
+    
 }
+
+.ramadhan-product-card {
+    position: relative; /* penting supaya badge bisa absolute di dalam card */
+    overflow: visible;
+}
+
+
 
 .ramadhan-product-info {
     padding: 20px;
