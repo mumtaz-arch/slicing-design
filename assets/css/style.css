@@ -1097,3 +1097,64 @@ body {
       font-family: "Stratos", sans-serif;
 
     }
+
+     .coffee-section {
+      position: relative;
+      padding: 80px 0;
+      
+    }
+
+    .coffee-section h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-family: "Stratos", sans-serif;
+      font-size: 36px;
+      color: var(--primary-color);
+
+    }
+
+    .coffee-section p.lead {
+      font-weight: 400;
+      margin-bottom: 50px;
+      font-family: "Stratos", sans-serif;
+      color: var(--primary-color);
+
+
+    }
+
+    .step-number {
+      font-size: 4rem;
+      font-weight: 700;
+      color: var(--secondary-accent);
+      line-height: 1;
+      font-family: "Stratos", sans-serif;
+      color: var(--primary-color);
+      
+    }
+
+    .step-title {
+      font-weight: 700;
+      font-size: 20px;
+      margin-left: 10px;
+      font-family: "Stratos", sans-serif;
+      color: var(--primary-color);
+
+    }
+
+    .step-desc {
+      font-weight: 400;
+      color: #ddd;
+      margin-left: 0.5rem;
+      color: var(--primary-color);
+      font-family: "Stratos", sans-serif;
+
+
+    }
+
+    .coffee-image img {
+      width: 100%;
+      border-radius: 10px;
+      
+      
+    }
